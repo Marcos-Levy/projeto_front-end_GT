@@ -7,6 +7,7 @@ import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 
 
+
 export const HomePage = () => {
     const images = [
         { src: "../../public/White-Sneakers-PNG-Clipart1.svg" },
@@ -17,22 +18,18 @@ export const HomePage = () => {
 
     ];
 
-    const { pathname } = useLocation(); 
-
-    useEffect(() => {
-        window.scrollTo(0, 0);
-      }, [pathname]);
+    
 
     return (
         <>
-            <div className="w-full bg-[#F9F8FE]">
-                <Gallery imagens={images} />
+            <Gallery imagens={images} />
+            <div className="w-full bg-[#F9F8FE] px-20">
                 <ColecaoDestaqueFirst />
                 <ColecaoDestaqueSecond />
                 <SectionList colunas={'grid-cols-4'} title={'Produtos em Alta'} />
-                <OfertaEspecial />
-
+                
             </div>
+            <OfertaEspecial />
         </>
     );
 }

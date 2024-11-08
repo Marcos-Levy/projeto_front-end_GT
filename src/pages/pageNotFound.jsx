@@ -11,7 +11,7 @@ export const PageNotFound = () => {
             <div className="max-w-96 flex flex-col gap-4">
                 <LogoHeader/>
                 <h1 className="font-Inter font-bold text-dark-gray-2">Parece que não conseguimos encontrar a página que você estava procurando!</h1>
-                <Link to="/" className="w-52 h-10">
+                <Link to="/" className="w-52 h-10" >
                 <Button label="Ir para a página Inicial" className=" bg-primary text-light-gray-3 font-Inter font-bold w-full h-full rounded-md"/>
                 </Link>
                 
