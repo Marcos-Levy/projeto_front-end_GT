@@ -25,7 +25,7 @@ export const ProductView = () => {
 
     return (
         <>
-            <div className="px-20 flex flex-col bg-[#F9F8FE]">
+            <div className="px-20 flex flex-col bg-[#F9F8FE] py-5">
                 <div className="mb-10 font-medium font-Inter text-sm text-dark-gray-2 flex flex-row gap-3">
                     <Link to="/" className="font-bold">Home </Link>
                     <span>/</span>
